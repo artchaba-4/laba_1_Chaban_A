@@ -7,7 +7,6 @@ import os
 import sys
 from pathlib import Path
 
-# --- ДАНІ БЕРУТЬСЯ ВИКЛЮЧНО З ПАПКИ SHARED ---
 current_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(current_dir)
 
@@ -26,7 +25,6 @@ class ValidationError(Exception):
 HASH_ALGORITHM = "sha224"
 MIN_PASSWORD_LENGTH = 13
 
-# Персональна сіль генерується ТІЛЬКИ з VARIANT_NUMBER з shared/student.py
 SALT = str(VARIANT_NUMBER).zfill(5)
 
 DATA_DIR = Path(__file__).resolve().parent / "data"

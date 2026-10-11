@@ -2,7 +2,6 @@ import os
 import random
 import sys
 
-# --- ДАНІ БЕРУТЬСЯ ВИКЛЮЧНО З ПАПКИ SHARED ---
 current_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(current_dir)
 
@@ -13,7 +12,6 @@ if current_dir not in sys.path:
 
 from shared.student import GROUP_NAME, STUDENT_NAME, VARIANT_NUMBER
 
-# Вхідні дані
 passwords = [
     "Digital@F0r3nsics",
     "plain",

@@ -1,7 +1,6 @@
 import os
 import sys
 
-# --- ДАНІ БЕРУТЬСЯ ВИКЛЮЧНО З ПАПКИ SHARED ---
 current_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(current_dir)
 
