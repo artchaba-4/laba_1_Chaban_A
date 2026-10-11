@@ -1,0 +1,3 @@
+STUDENT_NAME = "Чабан Артем"
+GROUP_NAME = "КБ-204"
+VARIANT_NUMBER = 24

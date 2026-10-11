@@ -1,0 +1,162 @@
+[
+    {
+        "event": "login",
+        "user": "cloud_admin",
+        "result": "success",
+        "timestamp": "2026-09-27 21:15:40",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "cloud_admin",
+        "result": "failure",
+        "timestamp": "2026-09-27 21:15:40",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "unknown_user",
+        "result": "failure",
+        "timestamp": "2026-09-27 21:15:40",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "cloud_admin",
+        "result": "success",
+        "timestamp": "2026-10-11 16:11:54",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "cloud_admin",
+        "result": "failure",
+        "timestamp": "2026-10-11 16:11:54",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "unknown_user",
+        "result": "failure",
+        "timestamp": "2026-10-11 16:11:54",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "cloud_admin",
+        "result": "success",
+        "timestamp": "2026-10-11 16:26:45",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "cloud_admin",
+        "result": "failure",
+        "timestamp": "2026-10-11 16:26:45",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "unknown_user",
+        "result": "failure",
+        "timestamp": "2026-10-11 16:26:45",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "cloud_admin",
+        "result": "success",
+        "timestamp": "2026-10-11 16:26:46",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "cloud_admin",
+        "result": "failure",
+        "timestamp": "2026-10-11 16:26:46",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "unknown_user",
+        "result": "failure",
+        "timestamp": "2026-10-11 16:26:46",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "cloud_admin",
+        "result": "success",
+        "timestamp": "2026-10-11 16:27:04",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "cloud_admin",
+        "result": "failure",
+        "timestamp": "2026-10-11 16:27:04",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "unknown_user",
+        "result": "failure",
+        "timestamp": "2026-10-11 16:27:04",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "cloud_admin",
+        "result": "success",
+        "timestamp": "2026-10-11 16:28:28",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "cloud_admin",
+        "result": "failure",
+        "timestamp": "2026-10-11 16:28:28",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "unknown_user",
+        "result": "failure",
+        "timestamp": "2026-10-11 16:28:28",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "cloud_admin",
+        "result": "success",
+        "timestamp": "2026-10-11 18:41:47",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "cloud_admin",
+        "result": "failure",
+        "timestamp": "2026-10-11 18:41:47",
+        "args": [],
+        "kwargs": {}
+    }
+]
