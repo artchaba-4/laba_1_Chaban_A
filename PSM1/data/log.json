@@ -174,5 +174,169 @@
         "timestamp": "2026-10-11 21:10:41",
         "args": [],
         "kwargs": {}
+    },
+    {
+        "timestamp": "2026-10-12T09:22:52.189229",
+        "action": "Автентифікація користувача",
+        "user": "artem_admin",
+        "status": "failure",
+        "student": "Чабан Артем"
+    },
+    {
+        "event": "login",
+        "user": "cloud_admin",
+        "result": "success",
+        "timestamp": "2026-10-12 09:23:30",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "cloud_admin",
+        "result": "failure",
+        "timestamp": "2026-10-12 09:23:30",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "timestamp": "2026-10-12T09:25:08.963757",
+        "action": "Автентифікація користувача",
+        "user": "artem_admin",
+        "status": "failure",
+        "student": "Чабан Артем"
+    },
+    {
+        "event": "login",
+        "user": "cloud_admin",
+        "result": "success",
+        "timestamp": "2026-10-12 09:26:10",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "cloud_admin",
+        "result": "failure",
+        "timestamp": "2026-10-12 09:26:10",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "timestamp": "2026-10-12T09:33:00.001006",
+        "action": "Автентифікація користувача",
+        "user": "artem_admin",
+        "status": "success",
+        "student": "Чабан Артем"
+    },
+    {
+        "timestamp": "2026-10-12T09:33:00.006127",
+        "action": "Автентифікація користувача",
+        "user": "artem_admin",
+        "status": "failure",
+        "student": "Чабан Артем"
+    },
+    {
+        "timestamp": "2026-10-12T09:34:13.579798",
+        "action": "Автентифікація користувача",
+        "user": "artem_admin",
+        "status": "success",
+        "student": "Чабан Артем"
+    },
+    {
+        "timestamp": "2026-10-12T09:34:13.583525",
+        "action": "Автентифікація користувача",
+        "user": "artem_admin",
+        "status": "failure",
+        "student": "Чабан Артем"
+    },
+    {
+        "timestamp": "2026-10-12T09:34:33.408804",
+        "action": "Автентифікація користувача",
+        "user": "artem_admin",
+        "status": "success",
+        "student": "Чабан Артем"
+    },
+    {
+        "timestamp": "2026-10-12T09:34:33.414664",
+        "action": "Автентифікація користувача",
+        "user": "artem_admin",
+        "status": "failure",
+        "student": "Чабан Артем"
+    },
+    {
+        "timestamp": "2026-10-12T09:35:17.259585",
+        "action": "Автентифікація користувача",
+        "user": "artem_admin",
+        "status": "success",
+        "student": "Чабан Артем"
+    },
+    {
+        "timestamp": "2026-10-12T09:35:17.265492",
+        "action": "Автентифікація користувача",
+        "user": "artem_admin",
+        "status": "failure",
+        "student": "Чабан Артем"
+    },
+    {
+        "timestamp": "2026-10-12T09:36:44.123015",
+        "action": "Автентифікація користувача",
+        "user": "artem_admin",
+        "status": "success",
+        "student": "Чабан Артем"
+    },
+    {
+        "timestamp": "2026-10-12T09:36:44.126008",
+        "action": "Автентифікація користувача",
+        "user": "artem_admin",
+        "status": "failure",
+        "student": "Чабан Артем"
+    },
+    {
+        "event": "login",
+        "user": "cloud_admin",
+        "result": "success",
+        "timestamp": "2026-10-12 09:38:55",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "cloud_admin",
+        "result": "failure",
+        "timestamp": "2026-10-12 09:38:55",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "cloud_admin",
+        "result": "success",
+        "timestamp": "2026-10-12 09:41:29",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "cloud_admin",
+        "result": "failure",
+        "timestamp": "2026-10-12 09:41:29",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "hacker_unknown",
+        "result": "failure",
+        "timestamp": "2026-10-12 09:41:29",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "",
+        "result": "failure",
+        "timestamp": "2026-10-12 09:41:29",
+        "args": [],
+        "kwargs": {}
     }
 ]

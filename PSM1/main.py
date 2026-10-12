@@ -1,9 +1,8 @@
+import importlib
 import os
 import sys
 
-sys.path.append(
-    os.path.abspath(os.path.dirname(__file__))
-)
+sys.path.append(os.path.abspath(os.path.dirname(__file__)))
 
 from shared.student import GROUP_NAME, STUDENT_NAME, VARIANT_NUMBER
 
@@ -15,13 +14,13 @@ def main():
     print("=" * 70)
 
     print("\n>>> ЗАПУСК ЗАВДАННЯ 1: Аналіз паролів")
-    import PSM1
+    importlib.import_module("PSM1")
 
     print("\n>>> ЗАПУСК ЗАВДАННЯ 2: Контроль доступу")
-    import PSM1_2 
+    importlib.import_module("PSM1 2") 
 
     print("\n>>> ЗАПУСК ЗАВДАННЯ 3: Хешування та логування")
-    import PSM1_3 
+    importlib.import_module("PSM1 3") 
 
 
 if __name__ == "__main__":

@@ -1,10 +1,10 @@
 import csv
-from datetime import datetime
 import functools
 import hashlib
 import json
 import os
 import sys
+from datetime import datetime
 from pathlib import Path
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -73,7 +73,7 @@ def create_users(users_list: tuple):
             user_record = create_user(uname, pwd)
             records.append(user_record)
         except (ValueError, ValidationError) as e:
-            print(f"Помилка при створенні користувача {uname}: {e}")
+            print(f"[ПОМИЛКА РЕЄСТРАЦІЇ] Для {uname}: {e}")
 
     with open(CSV_FILE_PATH, mode="w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
@@ -84,7 +84,7 @@ def create_users(users_list: tuple):
 def load_users_db() -> list:
     users_db = []
     if not CSV_FILE_PATH.exists():
-        raise FileNotFoundError(f"Файл баз даних {CSV_FILE_PATH} не знайдено.")
+        raise FileNotFoundError(f"Файл бази даних {CSV_FILE_PATH} не знайдено.")
 
     with open(CSV_FILE_PATH, mode="r", encoding="utf-8") as file:
         reader = csv.reader(file)
@@ -104,9 +104,9 @@ def log_event(func):
             if res:
                 result_status = "success"
             return res
-        except Exception as err:
+        except Exception:
             result_status = "failure"
-            raise err
+            raise
         finally:
             log_entry = {
                 "event": "login",
@@ -122,7 +122,7 @@ def log_event(func):
                 try:
                     with open(JSON_LOG_PATH, mode="r", encoding="utf-8") as f:
                         logs = json.load(f)
-                except (json.JSONDecodeError, IOError):
+                except (OSError, json.JSONDecodeError):
                     logs = []
 
             logs.append(log_entry)
@@ -136,7 +136,7 @@ def log_event(func):
 @log_event
 def login(username: str, password: str) -> bool:
     if not username or not password:
-        raise ValueError("Логін або пароль не можуть бути порожніми.")
+        raise ValueError("Логін та пароль не можуть бути порожніми!")
 
     users_db = load_users_db()
 
@@ -153,38 +153,41 @@ def login(username: str, password: str) -> bool:
 
 
 def run_task3():
+    print(">>> ЗАПУСК ЗАВДАННЯ 3: Хешування, CSV та JSON-логування")
     print("=" * 70)
     print(
         f"Студент: {STUDENT_NAME} | Група: {GROUP_NAME} | Варіант: {VARIANT_NUMBER}"
     )
-    print("Завдання 3: Безпечне хешування, CSV-база та JSON-логування")
     print("=" * 70)
+    print(f"Параметри: Хеш = {HASH_ALGORITHM} | Сіль = '{SALT}'\n")
 
+    print("1. Реєстрація користувачів та збереження у CSV...")
+    create_users(users_to_register)
+
+    print("\n2. Зчитування бази даних з CSV:")
+    db = load_users_db()
+    print("=" * 80)
+    print(f"{'Користувач':<20} | {f'Хеш пароля ({HASH_ALGORITHM.upper()})':<55}")
+    print("=" * 80)
+    for uname, hval in db:
+        print(f"{uname:<20} | {hval}")
+    print("=" * 80)
+
+    print("\n3. Тестування автентифікації (з автоматичним логуванням у JSON):")
+    res1 = login("cloud_admin", "SecurePass1234!")
+    print(f"Вхід cloud_admin: {'УСПІШНО' if res1 else 'НЕВДАЛО'}")
+
+    res2 = login("cloud_admin", "WrongPassword123!")
+    print(f"Вхід cloud_admin (невірний пароль): {'УСПІШНО' if res2 else 'НЕВДАЛО'}")
+
+    res3 = login("hacker_unknown", "some_password")
+    print(f"Вхід hacker_unknown: {'УСПІШНО' if res3 else 'НЕВДАЛО'}")
+
+    print("\n4. Перевірка обробки винятків (порожній логін):")
     try:
-        print(f"\n1. Генерація персональної солі (з shared/student.py): '{SALT}'")
-        print(f"2. Використаний хеш-алгоритм: {HASH_ALGORITHM}")
-
-        print("\n3. Створення бази даних користувачів у CSV...")
-        create_users(users_to_register)
-
-        print("\n4. Зчитування та вивід вмісту users.csv:")
-        db = load_users_db()
-        print("-" * 70)
-        print(f"{'№':<3} | {'Логін':<18} | {'Хеш пароля'}")
-        print("-" * 70)
-        for idx, (uname, hval) in enumerate(db, start=1):
-            print(f"{idx:<3} | {uname:<18} | {hval}")
-        print("-" * 70)
-
-        print("\n5. Тестування системи автентифікації:")
-        res1 = login("cloud_admin", "SecurePass1234!")
-        print(f"Спроба входу (cloud_admin): {'УСПІШНО' if res1 else 'ПОМИЛКА'}")
-
-        res2 = login("cloud_admin", "WrongPassword123!")
-        print(f"Спроба входу (з невірним паролем): {'УСПІШНО' if res2 else 'НЕВІРНИЙ ПАРОЛЬ'}")
-
-    except Exception as e:
-        print(f"\n[ОБРОБКА ВИНЯТКУ]: {e}")
+        login("", "")
+    except ValueError as e:
+        print(f"[СПІЙМАНО ВИНОТОК] ValueError: {e}")
 
 
 if __name__ == "__main__":
