@@ -62,9 +62,7 @@ def evaluate_password(
 
 def run_task1():
     print("=" * 65)
-    print(
-        f"Студент: {STUDENT_NAME} | Група: {GROUP_NAME} | Варіант: {VARIANT_NUMBER}"
-    )
+    print(f"Студент: {STUDENT_NAME} | Група: {GROUP_NAME} | Варіант: {VARIANT_NUMBER}")
     print("Завдання 1: Комплексний аналізатор надійності паролів")
     print("=" * 65)
 

@@ -88,9 +88,7 @@ def check_access(username: str, resource_name: str, resource_level: int) -> tupl
 
 def run_task2():
     print("=" * 70)
-    print(
-        f"Студент: {STUDENT_NAME} | Група: {GROUP_NAME} | Варіант: {VARIANT_NUMBER}"
-    )
+    print(f"Студент: {STUDENT_NAME} | Група: {GROUP_NAME} | Варіант: {VARIANT_NUMBER}")
     print("Завдання 2: Багаторівнева система контролю доступу")
     print("=" * 70)
 

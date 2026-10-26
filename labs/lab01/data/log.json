@@ -402,5 +402,37 @@
         "timestamp": "2026-10-12 09:50:11",
         "args": [],
         "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "cloud_admin",
+        "result": "success",
+        "timestamp": "2026-10-12 10:56:03",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "cloud_admin",
+        "result": "failure",
+        "timestamp": "2026-10-12 10:56:03",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "hacker_unknown",
+        "result": "failure",
+        "timestamp": "2026-10-12 10:56:03",
+        "args": [],
+        "kwargs": {}
+    },
+    {
+        "event": "login",
+        "user": "",
+        "result": "failure",
+        "timestamp": "2026-10-12 10:56:03",
+        "args": [],
+        "kwargs": {}
     }
 ]

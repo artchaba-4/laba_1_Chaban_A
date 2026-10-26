@@ -155,9 +155,7 @@ def login(username: str, password: str) -> bool:
 def run_task3():
     print(">>> ЗАПУСК ЗАВДАННЯ 3: Хешування, CSV та JSON-логування")
     print("=" * 70)
-    print(
-        f"Студент: {STUDENT_NAME} | Група: {GROUP_NAME} | Варіант: {VARIANT_NUMBER}"
-    )
+    print(f"Студент: {STUDENT_NAME} | Група: {GROUP_NAME} | Варіант: {VARIANT_NUMBER}")
     print("=" * 70)
     print(f"Параметри: Хеш = {HASH_ALGORITHM} | Сіль = '{SALT}'\n")
 

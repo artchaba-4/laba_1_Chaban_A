@@ -17,10 +17,10 @@ def main():
     importlib.import_module("PSM1")
 
     print("\n>>> ЗАПУСК ЗАВДАННЯ 2: Контроль доступу")
-    importlib.import_module("PSM1 2") 
+    importlib.import_module("PSM1 2")
 
     print("\n>>> ЗАПУСК ЗАВДАННЯ 3: Хешування та логування")
-    importlib.import_module("PSM1 3") 
+    importlib.import_module("PSM1 3")
 
 
 if __name__ == "__main__":
